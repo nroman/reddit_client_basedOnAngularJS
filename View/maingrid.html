@@ -1,0 +1,24 @@
+<div ng-init="pageInit()">    
+   <table ng-show="reddits">
+       <thead>
+            <th></th>
+            <th>Score</th>            
+            <th>Title</th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="reddit in reddits">
+                <td>
+                  <a ng-bigimage image-url="{{reddit.data.url}}" href="{{reddit.data.url}}">
+                        <img src="{{reddit.data.url}}" alt="{{reddit.data.name}}" height="42" width="42">
+                    </a>
+                </td>
+                <td>{{reddit.data.score}}</td>       
+                <td>
+                    <h3 class="reddit_titel">{{reddit.data.title}}</h3>
+                    by <a href="#/authorDetails/:{{reddit.data.author}}">{{reddit.data.author}}</a>
+                </td>                         
+            </tr>
+        </tbody>
+    </table>
+    <div class="error">{{error}}</div>
+</div>

@@ -1,0 +1,47 @@
+body{
+    /*background-color: #2d2d2d;*/
+    font-family: 'Lato';
+    color: black;
+    font-weight: 300;
+}
+
+select{
+    margin: 10px;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.error{
+    color: red;
+    width: auto;
+    padding: 5px;
+}
+
+.workSpaceBlock{
+    margin-top: 10px;
+    border: double 1px black;
+    width: 800px;
+    min-width: 400px;
+    padding: 10px;
+    background-color: #ADD8E6;
+}
+
+table{
+   /* background-color: #696969;*/
+   margin-left: 50px;
+}
+
+tr
+{
+    padding: 10px;
+    margin-right: 30px;
+}
+
+.reddit_titel
+{
+    max-width: 400px;
+}
